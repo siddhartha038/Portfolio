@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddhartha - Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"/>
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+
+
+    <script src="index.js"></script>
+
+    <script src="https://kit.fontawesome.com/2d8de8006d.js" crossorigin="anonymous"></script>
+    
+    <style>
+   
+  
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+    
+    
+     
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(3, 1, 31);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 75px;
+        background-color: rgb(15, 3, 67);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 25px;
+      }
+
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+        color: rgb(88, 88, 207);
+        font-size: 1.06rem;
+      }
+
+      main hr{
+        border: 0;
+        background: #655fd7;
+        height:1.2px ;
+        margin: 40px 84px;
+      }
+
+        .left {
+        font-size: 1.4rem;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 85px 0;
+    }
+      .firstsection > div{
+        width: 30%;
+        margin: 30px;
+      }
+      .leftsection{
+        font-size: 2.5rem  
+      }
+
+      .leftsection .Buttons{
+        padding: 30px 0;
+      }
+      
+      .leftsection .btn{
+         padding: 12px;
+         background: #1e2167;
+         color: white;
+         border: 2px solid white;
+         border-radius: 6px;
+         font-size: 18px;
+         cursor: pointer;
+      }
+
+      .tcolour{
+          color: rgb(151, 68, 229);
+        }
+        #element{
+          color: rgb(151, 68, 229);
+        }
+
+      .text-gray{
+        color: gray;
+      }
+    .secondSection{
+      max-width: 80vw;
+      margin: auto ;
+      height: 62vh;
+    }
+    .secondSection h1{
+      font-size: 1.8rem;
+    }
+
+  .secondSection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+  }
+  .secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 6vw;
+  }
+  .image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+  }
+
+  .vertical-text{
+
+    position: relative;
+    top: 45px;
+    width: 150px;
+
+  }
+
+  .vertical-desc{
+    position: relative;
+    top:200px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+    margin-left: -100px;
+
+  }
+.jp-text{
+  position: relative;
+    top: 45px;
+    width: 150px;
+
+}
+.jp-desc{
+   position: relative;
+    top:220px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+    margin-left: -100px;
+
+}
+
+   @media screen and (max-width: 1400px) {
+    
+    body
+    {
+    }
+    .secondSection .vertical
+    {
+      height: unset;
+    }
+    .box
+    {
+      flex-direction: column;
+    }
+     
+    .vertical-title, .vertical-desc
+    {
+      left: 45px;
+    }
+
+    .firstsection{
+      flex-direction: column-reverse;
+    }
+    .secondSection{
+      width: 50vw;
+    }
+    nav{
+      flex-direction: column;
+    }
+    .leftsection{
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .rightsection{
+      width: 721px !important;
+      display: flex;
+      justify-content: center;
+    }
+
+    .rightsection img{
+      width: 45vw;
+      margin-bottom: 73px;
+    }
+
+    .image-top{
+      top: 133px;
+    }
+
+    .secondSection{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 141vh;
+    }
+    body{
+      min-width: fit-content;
+    }
+   }
+
+
+
+   
+   
+   
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  
+  <body>
+    <header>
+      <nav>
+        <div class="left">Siddhartha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Project">Projects</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div>Hi , I am <span class="tcolour">Siddhartha</span></div>
+          <div>and I am a passionate</div> 
+          <span id="element"></span>
+          <div class="Buttons"></div>
+          <a href="http://surl.li/uhvtd"> <button class="btn">Download Resume</button> </a>
+          <a href="https://github.com/siddhartha038"> <button class="btn">Visit Github </button> </a>
+        </div>
+
+        <div class="rightsection">
+          <video autoplay loop muted playsinline>
+            <source src="coading.mp4" type="video/webm">          
+        </video>
+        </div>
+      </section>
+
+      
+      <!-- ----------ABOUT---------- -->
+    <div id="about">
+      <section id="About"></section>
+      <div class="container">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="siddhartha.png">
+              </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>
+                  </p>
+                  <div class="tab-titles">I am a passionate learner currently pursuing my B.Tech in Computer Science and Engineering. 
+                    With a keen interest in exploring and acquiring new skills, I actively seek out opportunities to gain diverse experiences.
+                     I enjoy visualizing and implementing my learning in real-life situations, which allows me to constantly challenge myself and grow. My goal is to leverage my skills and knowledge to make a positive impact in the field of Software Development  and contribute to society.
+                      
+                    </div>
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                  <div class="tab-contents active-tab skill" id="skills">
+                          <div class="inner-ele"><span>DSA</span><br>Data Structure and Algorithms</div>
+                          <div class="inner-ele"><span>Web Development</span><br>Web app Development</div>
+                          <div class="inner-ele"><span>Java</span><br>Java Programming</div>
+                          <div class="inner-ele"><span>C++</span><br>C++ Programming<br></div>
+                          <div class="inner-ele"><span>C</span><br>C Programming<br></div>
+                          <div class="inner-ele"><span>Python</span><br>Python Programming<br></div>
+                          <div class="inner-ele"><span>AI ML IOT</span><br> AI ML Internet of things<br></div>
+                          <div class="inner-ele"><span>Figma</span><br>UI Designing<br></div>
+                          <div class="inner-ele"><span>CP</span><br>Competitive Programming<br></div>
+                          <div class="inner-ele"><span>GitHub</span><br>GitHub<br></div>
+                          <div class="inner-ele"><span>CyberSecurity</span><br>Cyber Security Analysis<br></div>
+                          <div class="inner-ele"><span>MySQL</span><br>MySQL<br></div>
+                        </div>
+        
+              </div>
+          </div>
+      </div>
+  </div>
+   <!--Education Section -->
+   <hr>
+   <section id="Education"></section>
+   <section class="Education" >
+    <span class="text-gray">Got Education in </span>
+        <h1>Education</h1>
+        <div class="EducationDetails">
+          <div class="ed">
+            <img  class="Educationimage"  src="Education-Download-PNG.png" alt="">
+            <div class="ed1">10th </br></br>Shanti Dham Sr. Sec. School </br></br> Atarra (Banda) </div>
+            </div>
+
+            <div class="ed">
+              <img  class="Educationimage"  src="Education-Download-PNG.png" alt="">
+              <div class="ed1">12th (P.C.M) </br></br>B.S.S. Education Centre</br></br> Kanpur Nagar </div>
+            </div>
+
+            <div class="ed">
+              <img  class="Educationimage"  src="Education-Download-PNG.png" alt="">
+              <div class="ed1">B.Tech C.S.E.</br></br>University Institute of Engineering and Technology CSJM University</br></br> Kanpur</div>
+            </div>
+
+
+        </div>
+
+   </section>
+  
+  
+  
+  
+  
+  <!--Work Experience Section -->
+  <hr>
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+           <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="a1.png" alt="">
+
+            <div class="vertical-text"></br> Acccenture </br> Virtual Developer Program (Aug 2022- Sept 2022)</div>
+          </div>
+          <div class="vertical-desc">
+            Experienced about artificial intelligence , cloud , cyber security. Also gain experience in debbuging algorithms.
+          </div>
+
+
+          <!-- Second intership Detals -->
+
+            <div class="vertical">
+              <img class="image-top" src="jpmorgan.png" alt="">
+  
+              <div class="jp-text"></br> JP Morgon </br> Virtual Developer Program (July 2023- August 2023)</div>
+            </div>
+            <div class="jp-desc">
+              Experienced about artificial intelligence , Gained Experience As Software Developer .
+            </div>
+          
+        </div>
+        
+      
+      </section>
+      <hr>
+      <section class="landc">
+      <span class="text-gray">Licenses and Certification Recivied </span>
+      <h1>Licenses And Certifications</h1> 
+      <div class="certificate">
+        <div class="lc">
+          <img class="imagelandc"  src="developer1.jpg" alt="">
+        
+        <div class="lc1">C programming </br> (14 August 2022) </br> <a href="https://drive.google.com/file/d/1UstuBCyxfmDzlzejJwObacPpfvCwb6jl/view?usp=drivesdk">Certification</a></div>
+      </div>
+      <div class="lc">
+        <img class="imagelandc"  src="developer1.jpg" alt="">
+      
+      <div class="lc2">Accenture Developer Program</br> (4 September 2023) </br> <a href="https://drive.google.com/file/d/1UJ804ADvKrKp1TRFV7TG0PEPiQ31dXAs/view">Certification</a></br>  </div>
+    </div>
+    <div class="lc">
+      <img class="imagelandc"  src="developer1.jpg" alt="">
+    
+    <div class="lc2">Frontend Developement </br> (September 2022) </br> <a href="https://drive.google.com/file/d/1UJ804ADvKrKp1TRFV7TG0PEPiQ31dXAs/view">Certification</a></br>  </div>
+  </div>
+
+  <div class="lc">
+    <img class="imagelandc"  src="developer1.jpg" alt="">
+  
+  <div class="lc4">Google Kickstart </br> (May 2022) </br> <a href="https://drive.google.com/file/d/1UvcV5XfMzRbCUayCeiLAsMGTv24X3JVH/view?usp=drivesdk">Certification</a></div>
+</div>
+
+<div class="lc">
+  <img class="imagelandc"  src="developer1.jpg" alt="">
+
+<div class="lc5">Tech Whiz </br> (April 2023) </br> <a href="https://drive.google.com/file/d/1V0i01Qfud6xrSXzDohhQVDaPV1XwVNEG/view?usp=drivesdk">Certification</a></div>
+</div>
+
+<div class="lc">
+  <img class="imagelandc"  src="developer1.jpg" alt="">
+
+<div class="lc6"> Google CyberSecurity </br> (June 2023) </br> <a href="https://coursera.org/verify/D5PWH9UL6NEV">Certification</a></div>
+</div>
+
+   
+
+      
+
+     </div>
+
+     <!-- 2nd line of certificate starts here -->
+     <div class="gap"></div>
+     <div class="certificate">
+      <div class="lc">
+        <img class="imagelandc"  src="developer1.jpg" alt="">
+      
+      <div class="lc1"> KodeKaze </br> (5 July 2023) </br> <a href="https://drive.google.com/file/d/1JanFnltT7a7OT3kNj1oR7mXqiECBDxIV/view?usp=drivesdk">Certification</a></div>
+    </div>
+    </div>
+
+      </section>
+
+
+    <!-- Project Section -->
+    <hr>
+    <section id="Project"></section>
+    <section class="Project">
+      <span class="text-gray">Project Developed </span>
+      <h1>Projects</h1>
+      <div class="Projectwork">
+        <div class="pw">
+          <img class="Projectw1" src="project.png" >
+          <div class="pw1"> Designing and Architecture of Computer 1 </br> <a href="https://github.com/siddhartha038/Computer1">ProjectLink</a>
+          </div>
+          </div>
+
+          <div class="pw">
+            <img class="Projectw1" src="project.png" >
+            <div class="pw2"> Designing and Architecture of Computer 2 </br> <a href="https://github.com/siddhartha038/Computer2">ProjectLink</a>
+            </div>
+            </div>
+
+
+
+              <div class="pw">
+                <img class="Projectw1" src="project.png" >
+                <div class="pw3"> Language Translator </br> <a href="https://github.com/siddhartha038/LanguageTranslator">ProjectLink</a>
+                </div>
+                </div>
+
+              <div class="pw">
+                <img class="Projectw1" src="project.png" >
+                <div class="pw3"> Voting Management System</br> <a href="https://github.com/siddhartha038/Voting-ManagementSystem">ProjectLink</a>
+                </div>
+                </div>
+
+              <div class="pw">
+                  <img class="Projectw1" src="project.png" >
+                  <div class="pw3">Password Strength Checker</br> <a href="https://github.com/siddhartha038/Password-Strength-Checker">ProjectLink</a>
+                  </div>
+                  </div>
+
+                <!--Adding the second section -->
+
+
+              <div class="pw">
+                  <img class="Projectw1" src="project.png" >
+                  <div class="pw3">Movie Recommender System</br> <a href="https://github.com/siddhartha038/MovieRecommendedSystem">ProjectLink</a>
+                  </div>
+                  </div>
+
+              
+
+
+
+
+      </div>
+
+
+    </section >
+
+
+    <!--Contact me -->
+     
+    <hr>
+    <section id="Contact"></section>
+    <section class="contact">
+      <div class="content">
+        <h2>Contact Me </h2>
+          <p> Looking Forward To Get In Touch With You. </p>
+      </div>
+      <div class="container">
+        <div class="contactInfo"> 
+          
+          <div class="box">
+            <div class="icon">
+              <i class="fa-solid fa-house"></i> <!-- Place the icon here -->
+            </div>
+            <div class="text">
+                <h3>Address</h3>
+                <p>Atarra , Banda , Uttar Pradesh , India</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>siddhartha038@gmail.com</p>
+              </div>
+          
+          </div>
+
+
+          <div class="box">
+            <div class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/siddhartha038">LinkedIn</a>
+              </div>
+          
+          </div>
+
+
+          <div class="box">
+            <div class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/siddhartha038/">Instagram</a>
+              </div>
+
+            
+          
+          </div>
+          
+        </div>
+       <!--Contact form html code -->
+
+       <div class="contactForm">
+        <form action="https://api.web3forms.com/submit" method="POST" , onsubmit="sendEmail()">
+           <h2>Send Message</h2>
+           <div class="inputBox">
+            <input type="hidden" name="access_key" value="702aeb87-7577-4180-9b26-0f81eef2c064">
+
+
+
+            <input type="text" name="name" required="required">
+            <span>Full Name</span>
+           </div>
+
+           <div class="inputBox">
+            <input type="text" name="Email" required="required">
+            <span>Email</span>
+           </div>
+
+           <div class="inputBox">
+            <input type="text" name="Message" required="required">
+            <span>Type your Message.....</span>
+           </div>
+
+           <div class="inputBox">
+            <input type="submit" name="" value="Send">
+           </div>
+          
+          </form>
+       </div>
+
+      </div>
+    
+      
+    </section>
+    
+
+
+    <!-- Contact me Section-->
+
+    <hr>
+      
+    </main>
+      
+      
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+       </div>
+
+       <div class="footer-rights">
+        All rights reserved | © 2024 Siddhartha Singh
+       </div>
+
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      function sendEmail() {
+         Email.send({
+             Host : "smtp.elasticemail.com",
+             Username : "siddhartha038@gmail.com",
+             Password : "5D5B4075C24D6F7CC134F9FDB952383272E6",
+             To : 'siddhartha0038@gmail.com',
+             From : document.getElementById("idname").value,
+             Subject : "New Enquiry",
+             Body : document.getElementById("idname").value,
+         }).then(
+             message => alert(message)
+         );
+  }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Programmer'],
+        typeSpeed: 50,
+      });
+    </script>
+
+  </body>
+</html>
+
+
+
